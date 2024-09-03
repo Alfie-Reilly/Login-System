@@ -68,6 +68,7 @@ namespace Login_System
             command.Parameters.AddWithValue("@paramUsername", txtUsername.Text);
             command.Parameters.AddWithValue("@paramPassword", txtPassword.Text);
             command.ExecuteNonQuery();
+            MessageBox.Show("Account was created");
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -78,6 +79,7 @@ namespace Login_System
             command.Parameters.AddWithValue("@paramUsername", txtUsername.Text);
             command.Parameters.AddWithValue("@paramPassword", txtPassword.Text);
             command.ExecuteNonQuery();
+                MessageBox.Show("Account was deleted");
         }
     }
 }
